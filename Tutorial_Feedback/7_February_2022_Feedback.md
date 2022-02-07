@@ -16,7 +16,9 @@ After allowings some jobs to begin running, ran the same command but with the `-
 DEBUG    [AnalysisManager : __init__] Retiring all unfinished jobs.
 ```
 
-- Thought: For me, `condor_q` does not show any jobs as `DONE`, only as `RUN` or `IDLE`. Is there a way to implement that? I think it would help for monitoring through condor - even if one can monitor the percentage of finished jobs through `run_analysis.py`. 
+Full log saved [here](https://www.google.com), `summary.json` file produced, so this appears to work properly.
+
+- Thought: For me, `condor_q` does not show any jobs as `DONE`, only as `RUN` or `IDLE`. Is there a way to submit condor jobs such that the number of jobs `DONE` on a given node is displayed from `condor_q`? I think it would help for monitoring through condor - even if one can monitor the percentage of finished jobs through `run_analysis.py`. 
 
 ## Blind option 
 
