@@ -16,11 +16,11 @@ After allowings some jobs to begin running, ran the same command but with the `-
 DEBUG    [AnalysisManager : __init__] Retiring all unfinished jobs.
 ```
 
-Full log saved [here](https://www.google.com), `summary.json` file produced, so this appears to work properly.
+Full log saved [here](UnretireJobsOutput.log), `summary.json` file produced, so this appears to work properly.
 
 - Thought: For me, `condor_q` does not show any jobs as `DONE`, only as `RUN` or `IDLE`. Is there a way to submit condor jobs such that the number of jobs `DONE` on a given node is displayed from `condor_q`? I think it would help for monitoring through condor - even if one can monitor the percentage of finished jobs through `run_analysis.py`. 
 
-Then, after running the same above command but with the `--unretire_jobs` flag added, this appears to successfully work as 410 jobs are unretired, after 410 were retired from the previous step. Full log saved [here](), now see 410 idle jobs from `condor_q`, so they appear to actually be resubmitted.
+Then, after running the same above command but with the `--unretire_jobs` flag added, this appears to successfully work as 410 jobs are unretired, after 410 were retired from the previous step. Full log saved [here](UnretireJobsOutput.log), now see 410 idle jobs from `condor_q`, so they appear to actually be resubmitted.
 
 - Question: Since merging was already done after `--retire_jobs` was used, do we need to worry about double counting files when merging is done again after `--untretire_jobs`? Additionally, will the `summary.json` file be properly updated? 
 
