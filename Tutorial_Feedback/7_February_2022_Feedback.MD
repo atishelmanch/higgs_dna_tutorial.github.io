@@ -11,4 +11,8 @@ python bonus/assess.py --input_dir "tutorial_tth_withSyst" --make_tables --group
 python bonus/assess.py --input_dir "tutorial_tth_withSyst" --make_tables --group_procs "OtherH:ggH_M125,VBFH_M125,VH_M125|GJets:GJets_HT-600ToInf,GJets_HT-400To600,GJets_HT-200To400,GJets_HT-100To200,GJets_HT-40To100|VGamma:ZGamma,WGamma|tt+X:TTGG,TTGamma,TTJets" --signals "ttH_M125,OtherH" --output_dir ttH_Blind --blind  --plots Variables.json
 ```
 
-![test](Tutorial_Feedback/Diphoton_mass_dataMC_Blind.pdf)
+And obtained the following two outputs:
+
+Blinded             |  Unblinded
+:-------------------------:|:-------------------------:
+![Blinded](Diphoton_mass_dataMC_Blind.png)  |  ![Unblinded](Diphoton_mass_dataMC_unblinded.png)
