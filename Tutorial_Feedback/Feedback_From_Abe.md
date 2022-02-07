@@ -30,7 +30,7 @@ From a first time use, in the end I was able to make the expected plot for the t
 ### On HTCondor
 - Running the command:
 ```
-python scripts/run_analysis.py --log-level "DEBUG" --config "metadata/tutorial/tth_presel_withSyst.json" --merge_outputs --output_dir "tutorial_tth_withSyst" --batch_system "condor"`
+python scripts/run_analysis.py --log-level "DEBUG" --config "metadata/tutorial/tth_presel_withSyst.json" --merge_outputs --output_dir "tutorial_tth_withSyst" --batch_system "condor"
 ```
 - If I understand what’s going on correctly, I notice it seems to take a fair bit of time to find the files for given datasets. Are these files being searched for on the fly rather than through use of something like the flashgg catalogs? 
 - By default, the output from the automated proxy copy attempt: 
