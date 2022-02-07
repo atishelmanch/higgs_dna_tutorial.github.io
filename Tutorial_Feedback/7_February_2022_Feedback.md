@@ -2,6 +2,14 @@
 
 This feedback is based on changes to the `correctionlib_systematics` branch of [`https://gitlab.cern.ch/smay/HiggsDNA`](https://gitlab.cern.ch/smay/HiggsDNA) from around [3 February 2022](https://gitlab.cern.ch/smay/HiggsDNA/-/commit/3b56611f6f4f52580cd565b94e2c4d8226f6477d). 
 
+## Retire / Unretire jobs 
+
+Testing the `--retire_jobs` and `--unretire_jobs` options for `scripts/run_analysis.py`. First ran the command:
+
+```
+python scripts/run_analysis.py --log-level "DEBUG" --config "metadata/tutorial/tth_presel_withSyst.json" --merge_outputs --output_dir "tutorial_tth_withSyst_short" --batch_system "condor" --short
+```
+
 ## Blind option 
 
 The blind option appears to work. Ran the following two commands:
