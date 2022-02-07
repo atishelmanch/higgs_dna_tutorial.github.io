@@ -10,6 +10,14 @@ Testing the `--retire_jobs` and `--unretire_jobs` options for `scripts/run_analy
 python scripts/run_analysis.py --log-level "DEBUG" --config "metadata/tutorial/tth_presel_withSyst_2018DataOnly.json" --merge_outputs --output_dir "tutorial_tth_withSyst_dataOnly" --batch_system "condor"
 ```
 
+After allowings some jobs to begin running, ran the same command but with the `--retire_jobs` flag added. At first there are minutes of delay, and then the manager appears to run and states:
+
+```
+DEBUG    [AnalysisManager : __init__] Retiring all unfinished jobs.
+```
+
+- Thought: For me, `condor_q` does not show any jobs as `DONE`, only as `RUN` or `IDLE`. Is there a way to implement that? I think it would help for monitoring through condor - even if one can monitor the percentage of finished jobs through `run_analysis.py`. 
+
 ## Blind option 
 
 The blind option appears to work. Ran the following two commands:
