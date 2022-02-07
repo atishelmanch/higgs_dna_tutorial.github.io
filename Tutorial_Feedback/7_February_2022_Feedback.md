@@ -7,7 +7,7 @@ This feedback is based on changes to the `correctionlib_systematics` branch of [
 Testing the `--retire_jobs` and `--unretire_jobs` options for `scripts/run_analysis.py`. First ran the command:
 
 ```
-python scripts/run_analysis.py --log-level "DEBUG" --config "metadata/tutorial/tth_presel_withSyst.json" --merge_outputs --output_dir "tutorial_tth_withSyst_short" --batch_system "condor" --short
+python scripts/run_analysis.py --log-level "DEBUG" --config "metadata/tutorial/tth_presel_withSyst_2018DataOnly.json" --merge_outputs --output_dir "tutorial_tth_withSyst_dataOnly" --batch_system "condor"
 ```
 
 ## Blind option 
